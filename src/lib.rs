@@ -1,10 +1,11 @@
-#[allow(non_camel_case_types)]
 use ::std::os::raw;
 
+#[allow(non_camel_case_types)]
 pub type c_va_list = raw::c_void;
 
 #[repr(u32)]
 #[derive(Copy, Clone, PartialEq)]
+#[allow(non_camel_case_types)]
 pub enum LogPriority {
     ANDROID_LOG_UNKNOWN = 0,
     ANDROID_LOG_DEFAULT = 1,
