@@ -1,6 +1,8 @@
 #[allow(non_camel_case_types)]
 use ::std::os::raw;
 
+pub type c_va_list = raw::c_void;
+
 #[repr(u32)]
 #[derive(Copy, Clone, PartialEq)]
 pub enum LogPriority {
@@ -30,7 +32,7 @@ extern "C" {
     pub fn __android_log_vprint(prio: ::std::os::raw::c_int,
                                 tag: *const ::std::os::raw::c_char,
                                 fmt: *const ::std::os::raw::c_char,
-                                ap: *mut __va_list_tag)
+                                ap: *mut c_va_list)
                                 -> ::std::os::raw::c_int;
 
     pub fn __android_log_assert(cond: *const ::std::os::raw::c_char,
