@@ -1,0 +1,6 @@
+[package]
+name = "android-log-sys"
+version = "0.1.0"
+authors = ["cauchywei <cauchywei@gmail.com>"]
+
+[dependencies]
