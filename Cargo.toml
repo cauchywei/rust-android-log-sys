@@ -2,5 +2,7 @@
 name = "android-log-sys"
 version = "0.1.0"
 authors = ["cauchywei <cauchywei@gmail.com>"]
+description = "Rust bindings to android/log.h"
+keywords = ["android", "jni", "log", "ndk"]
 
 [dependencies]
